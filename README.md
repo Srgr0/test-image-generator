@@ -3,7 +3,7 @@ Generate images of the specified size.
 
 ## Features
 - Any size, any quantity
-- Lossless compression does not work
+- metadata removal and lossless compression do not work
 
 ## Requirements
 - Python (3.x)
