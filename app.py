@@ -19,7 +19,7 @@ def create_ui():
         num_images_input = gr.Slider(minimum=1, maximum=10, step=1, label="Number of images to generate")
         generate_button = gr.Button("Generate")
 
-        output = gr.Gallery(label="Generated images").style(grid=3)
+        output = gr.Gallery(label="Generated images", columns=3, height='400px')
 
         generate_button.click(
             fn=generate_images,
