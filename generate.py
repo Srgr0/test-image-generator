@@ -20,14 +20,18 @@ def create_multiple_large_images(base_path, target_size_mb, num_images):
         created_image_paths.append(file_path)
     return created_image_paths
 
-parser = argparse.ArgumentParser(description='Generate large random images.')
-parser.add_argument('-b', '--base_path', type=str, required=True, help='Base path for image generation')
-parser.add_argument('-s', '--size', type=int, required=True, help='Target size of the images in MB')
-parser.add_argument('-n', '--num', type=int, required=True, help='Number of images to generate')
-args = parser.parse_args()
+def main():
+    parser = argparse.ArgumentParser(description='Generate large random images.')
+    parser.add_argument('-b', '--base_path', type=str, required=True, help='Base path for image generation')
+    parser.add_argument('-s', '--size', type=int, required=True, help='Target size of the images in MB')
+    parser.add_argument('-n', '--num', type=int, required=True, help='Number of images to generate')
+    args = parser.parse_args()
 
-base_path = args.base_path
-target_size_mb = args.size
-num_images = args.num
+    base_path = args.base_path
+    target_size_mb = args.size
+    num_images = args.num
 
-created_image_paths = create_multiple_large_images(base_path, target_size_mb, num_images)
+    created_image_paths = create_multiple_large_images(base_path, target_size_mb, num_images)
+
+if __name__ == "__main__":
+    main()
