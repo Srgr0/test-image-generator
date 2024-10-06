@@ -33,7 +33,7 @@ def create_ui():
 
         generate_button = gr.Button("Generate")
 
-        output_gallery = gr.Gallery(label="Generated Images", columns=3, height='400px').style(grid=[3])
+        output_gallery = gr.Gallery(label="Generated Images", columns=3, height='400px')
         download_button = gr.File(label="Download All Images as ZIP")
 
 
