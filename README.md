@@ -1,3 +1,14 @@
+---
+title: test-image-generator
+emoji: 🖼
+colorFrom: yellow
+colorTo: red
+sdk: gradio
+sdk_version: 4.44.0
+app_file: app.py
+pinned: false
+---
+
 # test-image-generator
 Generate images of the specified size.
 
